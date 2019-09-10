@@ -1,8 +1,11 @@
 node {
    
    stage('Code Checkout') { // for display purposes
-    git credentialsId: 'e6a569b9-a163-4720-8edf-fd7afc32a6a0', url: 'https://github.com/rajaduraivka/maven-examples.git'   }
-   stage('Build') {
+  git url: 'https://github.com/rajaduraivka/maven-examples.git'
+   }
+   stage('Build') 
+   
+   {
     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.0') {
      sh 'mvn clean compile'
      } 
