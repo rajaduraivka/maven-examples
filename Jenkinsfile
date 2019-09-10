@@ -19,7 +19,7 @@ node {
   -Dsonar.projectKey=admin-raja \
   -Dsonar.organization=admin-raja \
   -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=36374dac31b67af65b46da10c1b38ff5e1394953
+  -Dsonar.login=b67af65b46da10c1b38ff5e1394953\
      }    
       
    }
