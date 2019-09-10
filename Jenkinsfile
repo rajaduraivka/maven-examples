@@ -18,9 +18,7 @@ node {
      sh 'mvn sonar:sonar \
   -Dsonar.projectKey=admin-raja \
   -Dsonar.organization=admin-raja \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=b67af65b46da10c1b38ff5e1394953\
-     }    
+  -Dsonar.host.url=https://sonarcloud.io \   
       
    }
    stage('Archival repo') {
