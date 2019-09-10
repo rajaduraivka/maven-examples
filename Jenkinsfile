@@ -4,9 +4,7 @@ node {
 git credentialsId: 'e6a569b9-a163-4720-8edf-fd7afc32a6a0', url: 'https://github.com/rajaduraivka/maven-examples.git' 
    }
    
-   stage('Build') 
-   
-   {
+   stage('Build') {
     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.0') {
      sh 'mvn clean compile'
      } 
@@ -18,9 +16,9 @@ git credentialsId: 'e6a569b9-a163-4720-8edf-fd7afc32a6a0', url: 'https://github.
    }
    stage('Code Quality') {
      withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.0') {
-     
-     
-     }
+   
+     }    
+      
    }
    stage('Archival repo') {
     withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.0') {
